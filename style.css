@@ -49,6 +49,40 @@ body {
     display: none;
 }
 
+     #navbar ul { 
+    	margin: 0; 
+    	padding: 10px; 
+    	list-style-type: none;
+    	text-align: right; 
+    	background-color: #000; 
+    	} 
+     
+    #navbar ul li {  
+    	display: inline; 
+    	} 
+     
+    #navbar ul li a { 
+    	text-decoration: none; 
+    	padding: .2em 1em; 
+    	color: #fff; 
+    	background-color: #000; 
+    	} 
+     
+    #navbar ul li a:hover { 
+    	color: #000; 
+    	background-color: #fff; 
+    	} 
+     
+    	#navbar{
+        position: fixed;
+        z-index: 100000;
+        width: 100%;
+        }
+    	nav.stricky-fixed.fadeInDown.animated{
+    
+       top:40px;    
+      }       
+
 .menu-btn {
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
