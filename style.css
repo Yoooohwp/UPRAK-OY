@@ -1,0 +1,119 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #add8e6; 
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(135deg, #5a7d9a, #7fa1bf);
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    transition: left 0.4s ease-in-out;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: orange;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 12px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+#sidebar-toggle {
+    display: none;
+}
+
+.menu-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 100;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#sidebar-toggle:checked + .menu-btn + .sidebar {
+    left: 0;
+}
+
+.content {
+    margin-left: 20px;
+    padding: 20px;
+    transition: margin-left 0.4s ease-in-out;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #5a7d9a, #7fa1bf);
+    padding: 12px 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+}
+
+.top-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.top-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #f4f4f4;
+    transform: scale(1.05);
+}
+
+.logo-container img {
+    max-width: 150px; 
+    height: auto;
+    display: block;
+    margin: auto;
+}
